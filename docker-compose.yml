@@ -23,8 +23,8 @@ services:
     ports: ['9200:9200']
     networks: ['stack']
     volumes:
-      - 'es_config:/usr/share/elasticsearch/config/'
       - 'certs:/usr/share/elasticsearch/config/certs'
+      - 'es_config:/usr/share/elasticsearch/config/'
       - 'ls_config:/logstash'
       - 'kb_config:/kibana'
       - 'es_data:/usr/share/elasticsearch/data'
