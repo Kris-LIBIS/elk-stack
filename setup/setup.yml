@@ -9,7 +9,7 @@ services:
       - "ELASTIC_PASSWORD"
       - "ELASTIC_VERSION"
       - "TAG"
-      - "COMPOSE_PROJECT_NAME=stack-docker"
+#      - "COMPOSE_PROJECT_NAME=elk-stack"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "${PWD}:${PWD}"
